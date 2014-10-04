@@ -1,4 +1,5 @@
 Repository of my lex and yacc programs.
+Provide detailed info for newbie.
 
 How to run?
 
@@ -13,11 +14,11 @@ Get this repo:
 
 
 Compile:
-5. lex <filename.l>
-6. yacc -d <filename.y>
+5. lex filename.l
+6. yacc -d filename.y
 7. gcc lex.yy.c y.tab.c -ll
     OR
-5-7. ./outlex <filename>
+5-7. ./outlex filename
 
 Run:
 8. ./a.out
