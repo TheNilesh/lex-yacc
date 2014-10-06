@@ -1,10 +1,9 @@
 %{
 #include<stdio.h>
 %}
-%token DT ID ASS CMP ARTH NUMBER
+%token DT ID ASS CMP ARTH NUMBER SEMI
 %%
-codeline: DT ID			{printf("variable declared");}
-|DT ID ASS exp
+exp: DT ID	{printf("hhgghg");}
 ;
 %%
 int main()
@@ -13,4 +12,6 @@ yyparse();
 return 0;
 }
 yyerror(char *s)
-{}
+{
+printf("error");
+}
