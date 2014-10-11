@@ -1,5 +1,8 @@
 %{
-/* Title: Variable declaration in C*/
+/* Title: Variable declaration in C 
+(supports complex declarations except pointers, float, and char)
+   Programmer: Nilesh Akhade
+*/
 #include<stdio.h>
 %}
 %token ID NUMBER SEMI ASSOP DT OP
@@ -18,12 +21,12 @@ id: ID
 | ID ASSOP id				/* int x=y=3; */
 | ID '[' NUMBER ']'			/*array size/index >=0*/
 ;
-exp: ID OP exp				/*x+2*/
+exp:'(' exp ')'				/*(5+2)*/
+| ID OP exp				/*x+2*/
 | val OP exp				/* 3+5 or 3 + x+2 or 3+ 4*x */
-| '(' exp ')'				/*(5+2*/
-| val					/*9*/
 | val OP ID				/*5+x*/
 | ID OP ID				/*x+y*/
+| val					/*9*/
 ;
 val: NUMBER
 ;

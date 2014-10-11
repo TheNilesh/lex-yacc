@@ -1,0 +1,10 @@
+[user@localhost intermediate code]$ ./a.out
+z=a-b*c*-d
+
+op      arg1    arg2    result
+*        b       c       A 
+-        d               B 
+*        A       B       C 
+-        a       C       D 
+=        D               z 
+

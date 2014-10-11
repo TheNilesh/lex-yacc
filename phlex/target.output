@@ -1,0 +1,13 @@
+[rajesh@localhost target code]$ ./a.out
+z=a+b/d*c
+
+op      arg1    arg2    result
+/        b        d      A               MOV A,b
+                                         DIV A,d
+*        A        c      B               MOV B,A
+                                         MUL B,c
++        a        B      C               MOV C,a
+                                         ADD C,B
+=        C               z               MOV z,C
+
+

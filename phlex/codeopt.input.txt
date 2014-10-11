@@ -1,0 +1,4 @@
+a=a+b
+c=a-b
+d=a+b
+e=d+c
