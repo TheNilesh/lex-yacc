@@ -1,30 +1,29 @@
 Repository of my lex and yacc programs.
-Provide detailed info for newbie.
 
 How to run?
 
 setup following:
 0. sudo apt-get update
-1. sudo apt-get install flex
-2. sudo apt-get install bison
-3. sudo apt-get git-core
+0. sudo apt-get install flex
+0. sudo apt-get install bison
+0. sudo apt-get git-core
 
 Get this repo:
-4. git clone https://github.com/TheniL/lex-yacc.git
+0. git clone https://github.com/TheniL/lex-yacc.git
 
 
 Compile:
-5. lex filename.l
-6. yacc -d filename.y
-7. gcc lex.yy.c y.tab.c -ll
+0. lex filename.l
+0. yacc -d filename.y
+0. gcc lex.yy.c y.tab.c -ll
     OR
-5-7. ./outlex filename
+0. ./outlex filename
 
 Run:
-8. ./a.out
+0. ./a.out
 
 *****OPTIMIZE SOURCE CODE*****
 
 Save to github:
-9. git commit -a -m "<Your savetag>"
-10. git push
+0. git commit -a -m "<Your savetag>"
+0. git push
