@@ -9,7 +9,7 @@ setup following:
  0. sudo apt-get git-core
 
 Get this repo:
- 0. git clone https://github.com/TheniL/lex-yacc.git
+ 0. git clone https://github.com/TheniLesh/lex-yacc.git
 
 
 Compile:
